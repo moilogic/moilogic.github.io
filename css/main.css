@@ -2,12 +2,15 @@
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: #333;
   }
   /*h2,h3{
     font-size: 120%;
     line-height: 30px;
   }*/
+  h2{
+    font-family: 'Open sans', sans-serif;
+  }
 h3{
     font: 20px "Lato", sans-serif;
   }
@@ -23,14 +26,34 @@ header{
   opacity: .90;
   height: 80px;
 }
+
  .content{
     width: auto;
     max-width: 900px;
     margin: 0 auto;
-    color: #999;
+    color: #333;
     padding: 0 20px;
     text-align: center;
     text-align: justify;
+}
+ .secondcontent{
+    width: auto; 
+    color: #333;
+    padding: 0 20px;
+    text-align: center;
+    text-align: justify;
+}
+.bg-img2 li a{
+  color: #fff;
+  font-weight: bold;
+}
+.bg-img2 li a:hover{
+  color: #21bc24;
+}
+
+.middle{
+  background-color: #282E34;
+  padding: 50px 0;
 }
  .centerFront{
     width: auto;
@@ -87,15 +110,31 @@ nav ul li a{
 nav ul a:hover{
   color: #21bc24;
 }
-.bg-img{
+main{
+  overflow-x: hidden;
+}
+.bg-img1{
   background-image: url('../img/image6.jpg');
   min-height: 600px;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  
+  background-attachment: fixed; 
 }
+.bg-img2{
+  background-image: url('../img/image5.jpg');
+  min-height: 400px;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center center;
+}
+#projectTop{
+  background-image: url('../img/image5.jpg');
+   background-size: cover;
+}
+
 .centerImage{
   position: absolute;
  
