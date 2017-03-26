@@ -26,6 +26,9 @@ header{
   opacity: .90;
   height: 80px;
 }
+.img-circle{
+  border-radius: 50%;
+}
 
  .content{
     width: auto;
@@ -63,7 +66,8 @@ header{
     text-align: center;
 }
 #logo{
-  
+   position: relative;
+   top: 9px;
 }
 header h1 a{
   color: #fff;
@@ -71,7 +75,7 @@ header h1 a{
 }
 header h1{
   float: left;
-  
+  display: inline; 
 }
 header h1 a:hover{
   color: #fff;
@@ -80,7 +84,6 @@ header h1 a:hover{
 nav{
   float: right;
   padding: 5px 0;
-  
 }
 #menu-icon{
   display: hidden;
@@ -94,8 +97,15 @@ nav{
 a:hover#menu-icon{
   border-radius: 4px 4px 0 0;
 }
-ul{
+header ul{
   list-style: none;
+   position: relative;
+   top: -25px;
+}
+#projectCenter  ul{
+  list-style: none;
+   position: relative;
+   top: 30px;
 }
 nav ul li{
   float: left;
@@ -115,7 +125,7 @@ main{
 }
 .bg-img1{
   background-image: url('../img/image6.jpg');
-  min-height: 600px;
+  min-height: 800px;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -123,12 +133,13 @@ main{
 }
 .bg-img2{
   background-image: url('../img/image5.jpg');
-  min-height: 400px;
+  min-height: 300px;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-position: center center;
+  margin-bottom: 0;
 }
 #projectTop{
   background-image: url('../img/image5.jpg');
