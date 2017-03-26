@@ -22,12 +22,16 @@ header{
   position: fixed;
   /*margin-top: 30px;*/
   width: 100%;
-  z-index: 1;
+  z-index: 100;
   opacity: .90;
-  height: 80px;
+  height: 90px;
 }
 .img-circle{
   border-radius: 50%;
+}
+
+.move{
+  margin-top: 150px;
 }
 
  .content{
@@ -67,15 +71,16 @@ header{
 }
 #logo{
    position: relative;
-   top: 9px;
+   top: 10px;
 }
 header h1 a{
   color: #fff;
   text-decoration: none;
+  
 }
 header h1{
   float: left;
-  display: inline; 
+   
 }
 header h1 a:hover{
   color: #fff;
@@ -99,8 +104,6 @@ a:hover#menu-icon{
 }
 header ul{
   list-style: none;
-   position: relative;
-   top: -25px;
 }
 #projectCenter  ul{
   list-style: none;
@@ -111,21 +114,23 @@ nav ul li{
   float: left;
   padding: 0px 35px 20px 0;
   display: inline-block;
+  padding-top: 0;
 } 
 
 nav ul li a{
   color: #fff;
   padding-bottom: 10px;
+  font-weight: 4%;
+  text-decoration: none;
 }
 nav ul a:hover{
   color: #21bc24;
+  text-decoration: underline;
 }
-main{
-  overflow-x: hidden;
-}
+
 .bg-img1{
   background-image: url('../img/image6.jpg');
-  min-height: 800px;
+  min-height: 700px;
   background-size: cover;
   width: 100%;
   background-repeat: no-repeat;
@@ -161,9 +166,7 @@ h3{
   font-size: 120%;
   line-height: 30px;
 }
-.move{
-  margin-top: 140px;
-}
+
 h2{
   text-align: center;
   color: #fff;
@@ -235,7 +238,7 @@ footer{
  height: 25px;
 }
 
-@media screen and (max-width: 475px){
+@media screen and (max-width: 478px){
   body{
     position: absolute;
   }
@@ -247,10 +250,14 @@ footer{
   }
   #menu-icon{
     display: inline-block;
-    
   }
+
+  #logo{
+   position: relative;
+   top: -3px;
+}
   nav ul, nav:active ul{
-    display: none;
+    
     position: absolute;
     padding: 20px;
     background-color: #030703;
@@ -268,10 +275,11 @@ footer{
   }
   nav:hover ul{
     display: block;
+    position: fixed;
   }
   .centerImage img{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
   }
 
   h2{
