@@ -257,7 +257,7 @@ footer{
    top: -3px;
 }
   nav ul, nav:active ul{
-    
+    display: none;
     position: absolute;
     padding: 20px;
     background-color: #030703;
